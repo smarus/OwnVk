@@ -1,4 +1,4 @@
-package com.ruslan.android.ownvk;
+package com.ruslan.android.ownvk.ui.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import android.widget.Toast;
 
 import com.arellomobile.mvp.MvpAppCompatActivity;
 import com.arellomobile.mvp.presenter.InjectPresenter;
+import com.ruslan.android.ownvk.CurrentUser;
+import com.ruslan.android.ownvk.R;
 import com.ruslan.android.ownvk.constant.ApiConst;
 import com.ruslan.android.ownvk.mvp.presenter.MainPresenter;
 import com.ruslan.android.ownvk.mvp.view.MainView;
@@ -19,7 +21,7 @@ import com.vk.sdk.util.VKUtil;
 
 import java.util.Arrays;
 
-public class MainActivity extends MvpAppCompatActivity implements MainView{
+public class MainActivity extends BaseActivity implements MainView{
 
 
 	@InjectPresenter
